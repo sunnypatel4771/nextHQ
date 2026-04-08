@@ -1,0 +1,163 @@
+/*
+|--------------------------------------------------------------------------
+| NexHQ — Custom Branding & UI Overrides
+|--------------------------------------------------------------------------
+| Primary Color : #4F46E5 (Indigo)
+| Light BG      : #F8FAFC
+| Font          : Inter
+*/
+
+/* -----------------------------------------------------------------------
+   CSS VARIABLES — NexHQ Color System
+----------------------------------------------------------------------- */
+:root {
+    --nexhq-primary:        #4F46E5;
+    --nexhq-primary-hover:  #4338CA;
+    --nexhq-primary-light:  #EEF2FF;
+    --nexhq-sidebar-bg:     #1E1B4B;
+    --nexhq-sidebar-text:   #C7D2FE;
+    --nexhq-sidebar-active: #4F46E5;
+    --nexhq-bg:             #F8FAFC;
+    --nexhq-white:          #FFFFFF;
+    --nexhq-border:         #E2E8F0;
+    --nexhq-text:           #1E293B;
+    --nexhq-muted:          #64748B;
+}
+
+/* -----------------------------------------------------------------------
+   GLOBAL BACKGROUND
+----------------------------------------------------------------------- */
+body {
+    background-color: var(--nexhq-bg) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/* -----------------------------------------------------------------------
+   ADMIN LOGIN PAGE — NexHQ Branding
+----------------------------------------------------------------------- */
+body.login_admin {
+    background-color: var(--nexhq-bg) !important;
+}
+
+body.login_admin .authentication-form-wrapper .btn-primary {
+    background-color: var(--nexhq-primary) !important;
+    border-color: var(--nexhq-primary) !important;
+}
+
+body.login_admin .authentication-form-wrapper .btn-primary:hover {
+    background-color: var(--nexhq-primary-hover) !important;
+    border-color: var(--nexhq-primary-hover) !important;
+}
+
+/* Login card */
+body.login_admin .tw-bg-white {
+    border-color: var(--nexhq-border) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04) !important;
+}
+
+/* Company name on login */
+body.login_admin .company-logo {
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------------
+   SIDEBAR — NexHQ Dark Indigo
+----------------------------------------------------------------------- */
+#menu,
+#menu.sidebar {
+    background-color: var(--nexhq-sidebar-bg) !important;
+}
+
+#menu .nav > li > a {
+    color: var(--nexhq-sidebar-text) !important;
+}
+
+#menu .nav > li > a:hover,
+#menu .nav > li.active > a {
+    background-color: var(--nexhq-sidebar-active) !important;
+    color: #fff !important;
+}
+
+#menu .nav > li > a .menu-icon {
+    color: var(--nexhq-sidebar-text) !important;
+}
+
+#menu .nav > li.active > a .menu-icon,
+#menu .nav > li > a:hover .menu-icon {
+    color: #fff !important;
+}
+
+/* Sidebar second level */
+#menu .nav-second-level li a {
+    color: var(--nexhq-sidebar-text) !important;
+}
+
+#menu .nav-second-level li a:hover {
+    color: #fff !important;
+}
+
+/* Sidebar user profile card */
+#menu .sidebar-user-profile > a {
+    background-color: rgba(255,255,255,0.07) !important;
+    border-color: rgba(255,255,255,0.12) !important;
+    color: #fff !important;
+}
+
+/* -----------------------------------------------------------------------
+   HEADER / TOP NAV
+----------------------------------------------------------------------- */
+#header {
+    background-color: var(--nexhq-primary) !important;
+    border-bottom: none !important;
+}
+
+#header nav .logo-text,
+#header nav a.logo,
+#header .logo a {
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 1.25rem !important;
+    letter-spacing: -0.01em;
+}
+
+/* -----------------------------------------------------------------------
+   BUTTONS — NexHQ Primary
+----------------------------------------------------------------------- */
+.btn-primary {
+    background-color: var(--nexhq-primary) !important;
+    border-color: var(--nexhq-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--nexhq-primary-hover) !important;
+    border-color: var(--nexhq-primary-hover) !important;
+}
+
+/* -----------------------------------------------------------------------
+   LINKS
+----------------------------------------------------------------------- */
+a {
+    color: var(--nexhq-primary);
+}
+
+a:hover {
+    color: var(--nexhq-primary-hover);
+}
+
+/* -----------------------------------------------------------------------
+   PANELS / CARDS
+----------------------------------------------------------------------- */
+.panel_s,
+.panel-body {
+    border-radius: 8px !important;
+}
+
+/* -----------------------------------------------------------------------
+   HIDE ANY VISIBLE PERFEX CRM REFERENCES
+----------------------------------------------------------------------- */
+a[href*="perfexcrm.com"],
+a[href*="help.perfexcrm"] {
+    display: none !important;
+}
